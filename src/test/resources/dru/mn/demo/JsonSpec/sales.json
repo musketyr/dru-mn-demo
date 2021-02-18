@@ -1,0 +1,60 @@
+{
+  "result": [
+    {
+      "product": {
+        "id": 45,
+        "name": "MacBook Air",
+        "manufacturer": {
+          "id": 25,
+          "name": "Apple"
+        }
+      },
+      "quantity": {
+        "amount": 100
+      },
+      "id": 19
+    },
+    {
+      "product": {
+        "id": 46,
+        "name": "MacBook Pro",
+        "manufacturer": {
+          "id": 25,
+          "name": "Apple"
+        }
+      },
+      "quantity": {
+        "amount": 35
+      },
+      "id": 20
+    },
+    {
+      "product": {
+        "id": 47,
+        "name": "Surface Pro",
+        "manufacturer": {
+          "id": 26,
+          "name": "Microsoft"
+        }
+      },
+      "quantity": {
+        "amount": 70
+      },
+      "id": 21
+    },
+    {
+      "product": {
+        "id": 48,
+        "name": "Surface Go",
+        "manufacturer": {
+          "id": 26,
+          "name": "Microsoft"
+        }
+      },
+      "quantity": {
+        "amount": 300
+      },
+      "id": 22
+    }
+  ]
+}

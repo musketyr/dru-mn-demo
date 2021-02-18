@@ -8,6 +8,7 @@ version = "0.1"
 group = "dru.mn.demo"
 
 repositories {
+    mavenLocal()
     mavenCentral()
     jcenter()
 }
@@ -36,6 +37,12 @@ dependencies {
 
     // micronaut console
     implementation 'com.agorapulse:micronaut-console:1.0.4'
+
+    // dru
+    testImplementation 'com.agorapulse:dru:0.8.1'
+    testImplementation 'com.agorapulse:dru-client-micronaut-data:0.8.1'
+    testImplementation 'com.agorapulse:dru-parser-json:0.8.1'
+    testImplementation 'com.agorapulse:dru-parser-sql:0.8.1'
 }
 
 

@@ -3,10 +3,30 @@ Content-Type: text/groovy
 Accept: application/json
 
 // language=Groovy
-import com.fasterxml.jackson.databind.ObjectMapper
-import dru.mn.demo.data.Book
-import dru.mn.demo.data.BookRepository
+import dru.mn.demo.data.Manufacturer
+import dru.mn.demo.data.Product
+import dru.mn.demo.data.Quantity
+import dru.mn.demo.data.Sale
 
-books.findAll()
+Manufacturer apple = manufacturers.save(new Manufacturer('Apple'))
 
+Product macbookAir = products.save(new Product('MacBook Air', apple))
+Product macbookPro = products.save(new Product('MacBook Pro', apple))
+
+Manufacturer ms = manufacturers.save(new Manufacturer('Microsoft'))
+
+Product surfacePro = products.save(new Product('Surface Pro', ms))
+Product surfaceGo = products.save(new Product('Surface Go', ms))
+
+Sale mbaSale = sales.save(new Sale(macbookAir, new Quantity(100)))
+Sale mbpSale = sales.save(new Sale(macbookPro, new Quantity(35)))
+Sale surfaceProSale = sales.save(new Sale(surfacePro, new Quantity(70)))
+Sale surfaceGoSale = sales.save(new Sale(surfaceGo, new Quantity(300)))
+
+[
+        mbaSale,
+        mbpSale,
+        surfaceProSale,
+        surfaceGoSale,
+]
 

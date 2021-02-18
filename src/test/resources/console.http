@@ -3,14 +3,26 @@ Content-Type: text/groovy
 Accept: text/plain
 
 // language=Groovy
-import dru.mn.demo.data.Book
-import dru.mn.demo.data.BookRepository
+import dru.mn.demo.data.Manufacturer
+import dru.mn.demo.data.Product
+import dru.mn.demo.data.Quantity
+import dru.mn.demo.data.Sale
 
-books.deleteAll()
+Manufacturer apple = manufacturers.save(new Manufacturer('Apple'))
 
-books.save(new Book("It", 1_000_000))
-books.save(new Book("The Old Man And The Sea", 10))
+Product macbookAir = products.save(new Product('MacBook Air', apple))
+Product macbookPro = products.save(new Product('MacBook Pro', apple))
 
-books.find("It")
+Manufacturer ms = manufacturers.save(new Manufacturer('Microsoft'))
+
+Product surfacePro = products.save(new Product('Surface Pro', ms))
+Product surfaceGo = products.save(new Product('Surface Go', ms))
+
+sales.save(new Sale(macbookAir, new Quantity(100)))
+sales.save(new Sale(macbookPro, new Quantity(35)))
+sales.save(new Sale(surfacePro, new Quantity(70)))
+sales.save(new Sale(surfaceGo, new Quantity(300)))
+
+sales.findAll()
 
 

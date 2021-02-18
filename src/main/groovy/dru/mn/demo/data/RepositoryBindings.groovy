@@ -13,12 +13,20 @@ class RepositoryBindings implements BindingProvider {
     private final ProductRepository productRepository
     private final SaleRepository saleRepository
     private final UserRepository userRepository
+    private final ManufacturerRepository manufacturerRepository
 
-    RepositoryBindings(BookRepository bookRepository, ProductRepository productRepository, SaleRepository saleRepository, UserRepository userRepository) {
+    RepositoryBindings(
+            BookRepository bookRepository,
+            ProductRepository productRepository,
+            SaleRepository saleRepository,
+            UserRepository userRepository,
+            ManufacturerRepository manufacturerRepository
+    ) {
         this.bookRepository = bookRepository
         this.productRepository = productRepository
         this.saleRepository = saleRepository
         this.userRepository = userRepository
+        this.manufacturerRepository = manufacturerRepository
     }
 
     @Override
@@ -27,7 +35,8 @@ class RepositoryBindings implements BindingProvider {
                 books: bookRepository,
                 products: productRepository,
                 sales: saleRepository,
-                users: userRepository
+                users: userRepository,
+                manufacturers: manufacturerRepository,
         ]
     }
 }
