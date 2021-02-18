@@ -3,11 +3,12 @@ Content-Type: text/groovy
 Accept: text/plain
 
 // language=Groovy
-import com.fasterxml.jackson.databind.ObjectMapper
 import dru.mn.demo.data.Book
 import dru.mn.demo.data.BookRepository
 
 BookRepository bookRepository = ctx.getBean(BookRepository)
+
+bookRepository.deleteAll()
 
 bookRepository.save(new Book("It", 1_000_000))
 bookRepository.save(new Book("The Old Man And The Sea", 10))

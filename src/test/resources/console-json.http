@@ -1,0 +1,16 @@
+POST http://localhost:8080/console/execute
+Content-Type: text/groovy
+Accept: application/json
+
+// language=Groovy
+import com.fasterxml.jackson.databind.ObjectMapper
+import dru.mn.demo.data.Book
+import dru.mn.demo.data.BookRepository
+
+BookRepository bookRepository = ctx.getBean(BookRepository)
+
+println "You can find books in 'result'"
+
+bookRepository.findAll()
+
+
