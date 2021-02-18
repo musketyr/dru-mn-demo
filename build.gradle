@@ -33,6 +33,9 @@ dependencies {
 
     implementation "jakarta.persistence:jakarta.persistence-api:2.2.3"
     implementation 'jakarta.transaction:jakarta.transaction-api:1.3.3'
+
+    // micronaut console
+    implementation 'com.agorapulse:micronaut-console:1.0.3'
 }
 
 
