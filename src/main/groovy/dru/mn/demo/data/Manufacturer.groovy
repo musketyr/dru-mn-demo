@@ -10,10 +10,6 @@ class Manufacturer {
     @Id
     @GeneratedValue
     Long id
-    final String name
 
-    @Creator
-    Manufacturer(String name) {
-        this.name = name
-    }
+    String name
 }

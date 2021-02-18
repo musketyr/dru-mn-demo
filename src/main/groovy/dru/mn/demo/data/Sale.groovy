@@ -10,16 +10,12 @@ import javax.persistence.GeneratedValue
 class Sale {
 
     @ManyToOne
-    final Product product
+    Product product
 
-    final Quantity quantity
+    Quantity quantity
 
     @Id
     @GeneratedValue
     Long id
 
-    Sale(Product product, Quantity quantity) {
-        this.product = product
-        this.quantity = quantity
-    }
 }

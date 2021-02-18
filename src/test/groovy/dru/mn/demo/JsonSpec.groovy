@@ -14,11 +14,7 @@ import javax.inject.Inject
 class JsonSpec extends Specification implements ApplicationContextProvider {
 
     @AutoCleanup Dru dru = Dru.create {
-        from 'sales.sql', {
-            map 'result', {
-                to Sale
-            }
-        }
+        include TestData.sales
     }
 
     @Inject ApplicationContext applicationContext

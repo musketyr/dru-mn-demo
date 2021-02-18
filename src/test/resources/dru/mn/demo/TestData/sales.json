@@ -1,0 +1,39 @@
+[
+  {
+    "product": {
+      "id": 45
+    },
+    "quantity": {
+      "amount": 100
+    },
+    "id": 19
+  },
+  {
+    "product": {
+      "id": 46
+    },
+    "quantity": {
+      "amount": 35
+    },
+    "id": 20
+  },
+  {
+    "product": {
+      "id": 47
+    },
+    "quantity": {
+      "amount": 70
+    },
+    "id": 21
+  },
+  {
+    "product": {
+      "id": 48
+    },
+    "quantity": {
+      "amount": 300
+    },
+    "id": 22
+  }
+]
+

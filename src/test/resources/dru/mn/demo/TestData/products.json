@@ -1,0 +1,31 @@
+[
+  {
+    "id": 45,
+    "name": "MacBook Air",
+    "manufacturer": {
+      "id": 25
+    }
+  },
+  {
+    "id": 46,
+    "name": "MacBook Pro",
+    "manufacturer": {
+      "id": 25
+    }
+  },
+  {
+    "id": 47,
+    "name": "Surface Pro",
+    "manufacturer": {
+      "id": 26
+    }
+  },
+  {
+    "id": 48,
+    "name": "Surface Go",
+    "manufacturer": {
+      "id": 26
+    }
+  }
+]
+
