@@ -9,8 +9,20 @@ class Product {
     @Id
     @GeneratedValue
     Long id
-    String name
-
+    private String name
     @ManyToOne
-    Manufacturer manufacturer
+    private Manufacturer manufacturer
+
+    Product(String name, Manufacturer manufacturer) {
+        this.name = name
+        this.manufacturer = manufacturer
+    }
+
+    String getName() {
+        return name
+    }
+
+    Manufacturer getManufacturer() {
+        return manufacturer
+    }
 }
