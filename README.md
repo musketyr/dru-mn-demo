@@ -1,5 +1,7 @@
 # Micronaut Data + Micronaut Console + Dru Demo
 
+Micronaut Console and Dru for Micronaut Data Demo 
+
 ## Micronaut Console
 
 Documentation: https://agorapulse.github.io/micronaut-console
@@ -13,6 +15,10 @@ dependencies {
 ```
 
 ### 2. Create a HTTP Client file for console friendly execution (returning JSON)
+
+Once you start the application, you can reach the console endpoint.
+
+Create a following file inside `src/test/resources` folder.
 
 #### console.http
 ```
