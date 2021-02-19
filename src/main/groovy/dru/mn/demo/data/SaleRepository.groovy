@@ -17,4 +17,10 @@ interface SaleRepository extends CrudRepository<Sale, Long> {
     @Join("product")
     @Join("product.manufacturer")
     Optional<Sale> findById(@NonNull @NotNull Long aLong)
+
+    @NonNull
+    @Override
+    @Join("product")
+    @Join("product.manufacturer")
+    Iterable<Sale> findAll()
 }

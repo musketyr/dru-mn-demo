@@ -158,10 +158,10 @@ Documentation: https://agorapulse.github.io/dru
 
 ```groovy
 dependencies {
-    implementation "com.agorapulse:dru:0.8.1"
-    implementation "com.agorapulse:dru-client-micronaut-data:0.8.1"
-    implementation "com.agorapulse:dru-parser-json:0.8.1"
-    implementation "com.agorapulse:dru-parser-sql:0.8.1"
+    testImplementation "com.agorapulse:dru:0.8.1"
+    testImplementation "com.agorapulse:dru-client-micronaut-data:0.8.1"
+    testImplementation "com.agorapulse:dru-parser-json:0.8.1"
+    testImplementation "com.agorapulse:dru-parser-sql:0.8.1"
 }
 ```
 
