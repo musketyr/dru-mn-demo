@@ -2,6 +2,8 @@
 
 Micronaut Console and Dru for Micronaut Data Demo 
 
+https://github.com/musketyr/dru-mn-demo
+
 ## Micronaut Console
 
 Documentation: https://agorapulse.github.io/micronaut-console
