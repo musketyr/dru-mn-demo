@@ -12,7 +12,7 @@ Documentation: https://agorapulse.github.io/micronaut-console
 
 ```groovy
 dependencies {
-    implementation 'com.agorapulse:micronaut-console:0.1.4'
+    implementation 'com.agorapulse:micronaut-console:1.0.4'
 }
 ```
 
