@@ -590,7 +590,7 @@ class JsonSpec extends Specification implements ApplicationContextProvider {
 }
 ```
 
-10. Explore advanced Dru features
+### 10. Explore advanced Dru features
 
  * Advanced Property and Type Mapping - https://agorapulse.github.io/dru/#_property_and_type_mapping
  * Available Parsers - https://agorapulse.github.io/dru/#_parsers
